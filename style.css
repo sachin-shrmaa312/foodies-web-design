@@ -1,0 +1,251 @@
+/* TABLE OF CONTENT */
+/* 1. general
+2. number
+3.banner
+4.counter
+5.about
+6.story
+7.explore food
+8.testimonial
+9.team
+10.book food
+11.footer
+=========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color) !important;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================variable define ========================================== */
+:root {
+    --primary-color: #F5C332;
+    --secondary-color: #231e41;
+    --white-color: #ffff;
+    --black-color: #1c1c1c;
+
+    /* ============================text color variable================================================= */
+    --text-primary: #F5C332;
+    --text-secondary: #231e41;
+    --text-white: #ffff;
+    --text-color: #555;
+    --text-gray: #9999;
+}
+
+/* ============== 1 custom CSS ========================================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 0.425rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+h1 {
+    font-size: 3.125rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.3rem;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0.0625rem;
+}
+
+.main-btn {
+    padding: 0.625rem 1.875rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0 .125rem .625rem -0.0625rem rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    border: .1875rem solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--black-color);
+}
+
+.main-btn:hover {
+    background: transparent;
+    color: var(--text-primary);
+}
+
+.wrapper {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+.text-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+    color: var(--text-primary);
+}
+
+
+/* ==============================================  navbar design    ===================================================== */
+
+
+.navigation-wrap.scroll-on {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--white-color);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation-wrap .navbar-brand img {
+    width: 13rem;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 .625rem;
+    transition: all 200ms linear;
+}
+
+.navigation-wrap .navbar-toggler:focus {
+    outline: none;
+    border: unset;
+    box-shadow: none;
+}
+
+.navigation-wrap .nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-secondary);
+    letter-spacing: .0625rem;
+}
+
+.navigation-wrap .main-btn {
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+/* ========================================= section 1      banner design    ================================================= */
+
+.top-banner {
+    width: 100%;
+    background-image: url(../images/bg/bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 14.875rem 0 9.375rem;
+}
+
+/* ========================================= section 2    counter   ================================================= */
+
+.counter-section {
+    background-color: var(--black-color);
+    padding: 2.5rem 0;
+}
+
+.counter-section p {
+    color: var(--text-white);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* ========================================= section 1      banner design    ================================================= */
+
+.about-us-1 {
+    width: 100%;
+    background-image: url(../images/img/img-1.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 11.875rem 0 10.375rem;
+}
+
+.about-us-2 {
+    width: 100%;
+    background-image: url(../images/img/img-2.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 750px;
+    margin-left: -5rem;
+    padding: .875rem 0 10.375rem;
+}
+
+.about-us-2 .about-list {
+    list-style: none;
+}
+
+.banner {
+    width: 100%;
+    background-image: url(../images/bg/bg-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5.875rem 0 5.375rem;
+}
